@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     int n;
-    cin>>n;
+    cin>>n; //The question has asked to take an integer number as input and take that number of strings as input at individual lines. To do this in any case, we will create an array with a size given as input and will take that amount of input inside of each slot of an array.
     string a[n]; ///In cpp, we can also create an array of string. Hence, every single block of the array will contain a string.
     for(int i=0; i<n; i++)
     {
