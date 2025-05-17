@@ -31,11 +31,11 @@ int main()
     {
         long long n;
         cin>>n;
-        if(n%2 != 0) //All odd numbers have at least one odd divisor and that is the number itself.
+        /*if(n%2 != 0) //All odd numbers have at least one odd divisor and that is the number itself.
         {
             cout<<"YES"<<endl;
             continue;
-        }
+        } */ //Not necessary, the program written below does them all alone.
         while(n%2 == 0) //A number won't have an odd divisor if it is a power of 2. In fact, all the numbers in this world have at least one odd divisor except the numbers which are power of 2, because they are made up of many 2 multiplied with each other. 2 multiplied by itself gives us another even number, meaning another even factor.
         { //An even number which is not a power of 2 must has an odd prime number as factor in itself, which works as an odd divisor. Deep number theory.
             n/=2;
